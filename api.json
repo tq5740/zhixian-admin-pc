@@ -1,0 +1,12 @@
+{
+    "publics": "http://10.3.1.21:8001/publics",
+    "user": "http://10.3.1.21:8002/user",
+    "permission": "http://10.3.1.21:8003/permission",
+    "article": "http://10.3.1.21:8004/article",
+    "train": "http://10.3.1.21:8005/train",
+    "live": "http://10.3.1.21:8006/live",
+    "exam": "http://10.3.1.21:8007/exam",
+    "eval": "http://10.3.1.21:8008/eval",
+    "advert": "http://10.3.1.21:8009/advert",
+    "work": "http://10.3.1.21:8010/work"
+}

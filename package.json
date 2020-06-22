@@ -1,0 +1,89 @@
+{
+  "name": "t",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "node ./bin/createApi.js &&  cross-env NODE_ENV=development vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "build:auto": "vue-cli-service build && node ./bin/auto.js",
+    "lint": "vue-cli-service lint",
+    "bwn": "BABEL_ENV=development node --max_old_space_size=8110 node_modules/.bin/vue-cli-service serve --open"
+  },
+  "dependencies": {
+    "axios": "~0.18.0",
+    "bootstrap": "^4.3.1",
+    "codemirror": "^5.46.0",
+    "echarts": "^4.2.0-rc.2",
+    "element-china-area-data": "^4.1.2",
+    "element-ui": "~2.4.3",
+    "highcharts": "5.0.14",
+    "html2canvas": "^1.0.0-alpha.12",
+    "jquery": "^3.4.1",
+    "jsonp": "^0.2.1",
+    "jspdf": "^1.5.3",
+    "lodash.clonedeep": "~4.5.0",
+    "lrz": "^4.9.40",
+    "md5": "~2.2.1",
+    "popper": "^1.0.1",
+    "qs": "6.5.1",
+    "summernote": "^0.8.11",
+    "typescript-debounce-decorator": "~0.0.17",
+    "vue": "~2.5.16",
+    "vue-class-component": "~6.0.0",
+    "vue-cropper": "^0.4.8",
+    "vue-jsonp": "^0.1.8",
+    "vue-property-decorator": "~6.0.0",
+    "vue-router": "~3.0.1",
+    "vuex": "~3.0.1",
+    "vuex-class": "~0.3.1"
+  },
+  "devDependencies": {
+    "@types/highcharts": "^5.0.27",
+    "@types/md5": "~2.1.32",
+    "@types/qs": "~6.5.1",
+    "@vue/cli-plugin-babel": "~3.0.0-beta.15",
+    "@vue/cli-plugin-eslint": "~3.0.0-beta.15",
+    "@vue/cli-plugin-typescript": "~3.0.0-beta.15",
+    "@vue/cli-service": "~3.0.0-beta.15",
+    "@vue/eslint-config-prettier": "~3.0.0-rc.3",
+    "@vue/eslint-config-typescript": "~3.0.0-rc.3",
+    "archiver": "^3.0.0",
+    "babel-plugin-component": "~1.1.1",
+    "babel-plugin-dynamic-import-node": "~2.0.0",
+    "cheerio": "^1.0.0-rc.2",
+    "cross-env": "^5.2.0",
+    "husky": "~0.14.3",
+    "lint-staged": "~7.2.0",
+    "node-sass": "~4.9.0",
+    "node-ssh": "^5.1.2",
+    "rimraf": "^2.6.2",
+    "sass-loader": "~7.0.1",
+    "scp2": "^0.5.0",
+    "speed-measure-webpack-plugin": "~1.2.2",
+    "typescript": "^3.0.3",
+    "vue-template-compiler": "~2.5.16",
+    "webpack-parallel-uglify-plugin": "~1.1.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "src/**/*.js": [
+      "vue-cli-service lint",
+      "git add"
+    ],
+    "src/**/*.ts": [
+      "vue-cli-service lint",
+      "git add"
+    ],
+    "src/**/*.vue": [
+      "vue-cli-service lint",
+      "git add"
+    ]
+  }
+}
