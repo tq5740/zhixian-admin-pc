@@ -18,7 +18,7 @@
     "element-ui": "~2.4.3",
     "highcharts": "5.0.14",
     "html2canvas": "^1.0.0-alpha.12",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "jsonp": "^0.2.1",
     "jspdf": "^1.5.3",
     "lodash.clonedeep": "~4.5.0",
