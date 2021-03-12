@@ -20,7 +20,7 @@
     "html2canvas": "^1.0.0-alpha.12",
     "jquery": "^3.4.1",
     "jsonp": "^0.2.1",
-    "jspdf": "^1.5.3",
+    "jspdf": "^2.3.1",
     "lodash.clonedeep": "~4.5.0",
     "lrz": "^4.9.40",
     "md5": "~2.2.1",
